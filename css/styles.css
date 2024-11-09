@@ -26,9 +26,11 @@ margin-bottom: 0;
 }
 
 body{
-margin: 0;
+margin: 0px;
 margin-top: 60px;
-background: radial-gradient(134.34% 134.34% at 50% 0%, #1F3757 0%, #131537 100%);
+background-color: #131537;
+background-size: 100vh;
+
 
 
 }
@@ -56,6 +58,14 @@ justify-content: space-between;
 width: 600px;
 border: 1px solid white;
 border-radius: 10px;
+
+}
+
+.result-message{
+margin-top: -40px;
+color: yellow;
+font-size: 30px;
+text-align: center;
 
 }
 
@@ -106,7 +116,7 @@ font-weight: 600;
 }
 
 .buttons{
-width: 20%;
+width: 30%;
 display: flex;
 justify-content: center;
 gap: 50px;
@@ -116,6 +126,8 @@ background-repeat: no-repeat;
 background-size: 80%;
 background-position: center;
 }
+
+
 
 .paper{
 display: flex;
@@ -128,6 +140,12 @@ background-color: white;
 border: 20px solid #5771F5 ;
 }
 
+.paper:hover{
+border: 26px solid #5771F5;
+transition: 0.5s;
+    
+}
+
 .scissors{
 display: flex;
 align-items: center;
@@ -138,6 +156,12 @@ border-radius: 50%;
 background-color: white;
 border: 20px solid #EB9F10;
 }
+
+.scissors:hover{
+    border: 26px solid #EB9F10;
+    transition: 0.5s;
+        
+    }
 
 .scissors-home{
 align-items: center;
@@ -153,6 +177,12 @@ border-radius: 50%;
 background-color: white;
 border: 20px solid red ;
 }
+
+.rocks:hover{
+    border: 26px solid red;
+    transition: 0.5s;
+        
+    }
 
 .buttons-game-container{
 display: flex;
@@ -189,8 +219,76 @@ justify-content: space-between;
 padding: 10px;
 color: white;
 font-family: sans-serif;
+text-align: center;
 font-size: 24px;
 font-weight: 900;
-width: 600px;
+width: 800px;
 }
 
+.play-again-button{
+    padding: 10px;
+    color: #131537;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 500; 
+    background-color: white; 
+    border-radius: 20px; 
+    margin-top: 20px;
+}
+
+.modal{
+position: fixed;
+align-items: center;
+justify-content: center;
+align-content: center;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;  
+background-color: rgba(0, 0, 0, 0.8);  
+scale:0;
+}
+
+.modal-show{
+scale: 1;
+}
+
+.modal-img{
+position: absolute;
+margin-left: 720px;
+margin-top: -200px;
+}
+
+
+.container-modal-button{
+position: absolute;
+margin-top: -700px;
+width: 1700px;
+display: flex;
+align-items: end;
+justify-content: end;
+}
+
+.open-modal{
+font-size: 24px;
+font-family: sans-serif;
+padding: 8px;
+border-radius: 10px;
+}
+
+.open-modal:hover{
+font-size: 20px;
+text-align: center;
+transition: 0.3s;
+cursor: pointer;
+}
+
+/* pagina home */
+
+.container-home{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 15%;
+
+}
